@@ -1,0 +1,25 @@
+--Create a store database
+
+Create Table store (id INTEGER PRIMARY KEY, brand TEXT, price INTEGER, size INTEGER, color TEXT);
+
+INSERT INTO store VALUES (1,"Addidas",100,11,"black");
+INSERT INTO store VALUES (2,"Klein",100,11,"red");
+INSERT INTO store VALUES (3,"Crocs",70,11,"white");
+INSERT INTO store VALUES (4,"DC",85,11,"yellow");
+INSERT INTO store VALUES (5,"Footlocker",70,11,"blue");
+INSERT INTO store VALUES (6,"Gravati",80,12,"black");
+INSERT INTO store VALUES (7,"Heelys",55,12,"red");
+INSERT INTO store VALUES (8,"K-Swiss",60,12,"white");
+INSERT INTO store VALUES (9,"Lugz",65,12,"blue");
+INSERT INTO store VALUES (10,"Balance",70,12,"yellow");
+INSERT INTO store VALUES (11,"Nike",105,13,"black");
+INSERT INTO store VALUES (12,"Osiris",95,13,"red");
+INSERT INTO store VALUES (13,"Reebok",75,13,"white");
+INSERT INTO store VALUES (14,"Skechers",90,13,"blue");
+INSERT INTO store VALUES (15,"Vans",75,13,"yellow");
+
+--display the database ordered by price
+SELECT * FROM store ORDER BY price;
+
+--total sum from store
+SELECT SUM(price) FROM store;

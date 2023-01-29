@@ -1,0 +1,18 @@
+CREATE TABLE jeremysstore (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, aisle INTEGER);
+INSERT INTO jeremysstore VALUES (1,"shirts",27,40,13);
+INSERT INTO jeremysstore VALUES (2,"sweaters",40,40,13);
+INSERT INTO jeremysstore VALUES (3,"vest",30,40,13);
+INSERT INTO jeremysstore VALUES (4,"tie",15,10,7);
+INSERT INTO jeremysstore VALUES (5,"hat",20,15,7);
+INSERT INTO jeremysstore VALUES (6,"tanktop",18,40,30);
+INSERT INTO jeremysstore VALUES (7,"dress pants",50,45,20);
+INSERT INTO jeremysstore VALUES (8,"denim",32,45,20);
+INSERT INTO jeremysstore VALUES (9,"sweat pants",14,45,20);
+INSERT INTO jeremysstore VALUES (10,"gym shorts",8,45,20);
+INSERT INTO jeremysstore VALUES (11,"cargo shorts",19,45,20);
+INSERT INTO jeremysstore VALUES (12,"dress socks",6,30,9);
+INSERT INTO jeremysstore VALUES (13,"work socks",4,30,9);
+INSERT INTO jeremysstore VALUES (14,"flip flops",7,30,9);
+INSERT INTO jeremysstore VALUES (15,"dress shoes",85,30,9);
+
+SELECT * FROM jeremysstore ORDER BY price;
